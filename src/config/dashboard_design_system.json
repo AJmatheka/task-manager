@@ -1,0 +1,595 @@
+{
+  "designSystem": {
+    "name": "Dark Dashboard Design System",
+    "version": "1.0.0",
+    "description": "Comprehensive design system extracted from dashboard interface",
+    
+    "colorPalette": {
+      "primary": {
+        "background": "#0f1419",
+        "cardBackground": "#1a1f2e",
+        "cardBackgroundSecondary": "#242b3d",
+        "gradientStart": "#2d3748",
+        "gradientEnd": "#1a202c"
+      },
+      "accent": {
+        "orange": "#e53e3e",
+        "orangeGradientStart": "#ed8936",
+        "orangeGradientEnd": "#e53e3e",
+        "blue": "#3182ce",
+        "blueAccent": "#4299e1",
+        "green": "#38a169",
+        "greenAccent": "#48bb78",
+        "yellow": "#d69e2e",
+        "purple": "#805ad5"
+      },
+      "text": {
+        "primary": "#ffffff",
+        "secondary": "#a0aec0",
+        "tertiary": "#718096",
+        "muted": "#4a5568"
+      },
+      "semantic": {
+        "success": "#38a169",
+        "warning": "#d69e2e",
+        "error": "#e53e3e",
+        "info": "#3182ce"
+      },
+      "borders": {
+        "subtle": "#2d3748",
+        "default": "#4a5568",
+        "accent": "#718096"
+      }
+    },
+
+    "components": {
+      "sidebar": {
+        "container": {
+          "backgroundColor": "#0f1419",
+          "width": "72px",
+          "borderRight": "1px solid #2d3748",
+          "padding": "16px 0"
+        },
+        "navigationIcons": {
+          "default": {
+            "iconColor": "#718096",
+            "backgroundColor": "transparent",
+            "borderRadius": "8px",
+            "padding": "12px",
+            "size": "24px"
+          },
+          "active": {
+            "iconColor": "#4299e1",
+            "backgroundColor": "#2d3748",
+            "borderRadius": "8px"
+          },
+          "hover": {
+            "iconColor": "#a0aec0",
+            "backgroundColor": "#1a202c",
+            "transition": "all 0.2s ease"
+          }
+        },
+        "notificationBadge": {
+          "backgroundColor": "#e53e3e",
+          "textColor": "#ffffff",
+          "fontSize": "12px",
+          "borderRadius": "50%",
+          "minWidth": "18px",
+          "height": "18px",
+          "position": "absolute",
+          "top": "8px",
+          "right": "8px"
+        }
+      },
+
+      "mainContent": {
+        "container": {
+          "backgroundColor": "#0f1419",
+          "padding": "24px",
+          "minHeight": "100vh"
+        },
+        "header": {
+          "title": {
+            "color": "#ffffff",
+            "fontSize": "28px",
+            "fontWeight": "600",
+            "marginBottom": "32px"
+          }
+        }
+      },
+
+      "cards": {
+        "primary": {
+          "backgroundColor": "#1a1f2e",
+          "border": "1px solid #2d3748",
+          "borderRadius": "12px",
+          "padding": "24px",
+          "boxShadow": "0 4px 6px rgba(0, 0, 0, 0.1)"
+        },
+        "secondary": {
+          "backgroundColor": "#242b3d",
+          "border": "1px solid #2d3748",
+          "borderRadius": "8px",
+          "padding": "16px"
+        },
+        "hover": {
+          "backgroundColor": "#1e2533",
+          "borderColor": "#4a5568",
+          "transform": "translateY(-2px)",
+          "boxShadow": "0 8px 15px rgba(0, 0, 0, 0.2)",
+          "transition": "all 0.3s ease"
+        }
+      },
+
+      "colorPaletteWidget": {
+        "container": {
+          "backgroundColor": "#1a1f2e",
+          "borderRadius": "12px",
+          "padding": "24px",
+          "border": "1px solid #2d3748"
+        },
+        "title": {
+          "color": "#ffffff",
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "marginBottom": "8px"
+        },
+        "subtitle": {
+          "color": "#718096",
+          "fontSize": "14px",
+          "marginBottom": "24px"
+        },
+        "colorCircle": {
+          "backgroundColor": "linear-gradient(135deg, #ed8936 0%, #e53e3e 100%)",
+          "width": "120px",
+          "height": "120px",
+          "borderRadius": "50%",
+          "border": "4px solid #2d3748",
+          "boxShadow": "0 8px 20px rgba(237, 137, 54, 0.3)"
+        },
+        "playButton": {
+          "color": "#ffffff",
+          "fontSize": "24px",
+          "position": "absolute",
+          "top": "50%",
+          "left": "50%",
+          "transform": "translate(-50%, -50%)"
+        },
+        "timeDisplay": {
+          "color": "#a0aec0",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "textAlign": "center",
+          "marginTop": "16px"
+        }
+      },
+
+      "taskList": {
+        "container": {
+          "backgroundColor": "#1a1f2e",
+          "borderRadius": "12px",
+          "padding": "24px",
+          "border": "1px solid #2d3748"
+        },
+        "header": {
+          "display": "flex",
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "marginBottom": "20px"
+        },
+        "title": {
+          "color": "#ffffff",
+          "fontSize": "18px",
+          "fontWeight": "600"
+        },
+        "taskCount": {
+          "backgroundColor": "#4a5568",
+          "color": "#a0aec0",
+          "padding": "4px 8px",
+          "borderRadius": "4px",
+          "fontSize": "12px"
+        },
+        "manageLink": {
+          "color": "#4299e1",
+          "fontSize": "14px",
+          "textDecoration": "none",
+          "hover": {
+            "color": "#63b3ed"
+          }
+        },
+        "taskItem": {
+          "backgroundColor": "#242b3d",
+          "borderRadius": "8px",
+          "padding": "16px",
+          "marginBottom": "12px",
+          "border": "1px solid #2d3748",
+          "display": "flex",
+          "alignItems": "center",
+          "gap": "12px"
+        },
+        "taskIcon": {
+          "backgroundColor": "#e53e3e",
+          "color": "#ffffff",
+          "borderRadius": "50%",
+          "width": "40px",
+          "height": "40px",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center"
+        },
+        "taskText": {
+          "color": "#ffffff",
+          "fontSize": "14px",
+          "fontWeight": "500"
+        },
+        "taskSubtext": {
+          "color": "#718096",
+          "fontSize": "12px",
+          "marginTop": "4px"
+        },
+        "starIcon": {
+          "color": "#d69e2e",
+          "marginLeft": "auto"
+        }
+      },
+
+      "meetingsList": {
+        "container": {
+          "backgroundColor": "#1a1f2e",
+          "borderRadius": "12px",
+          "padding": "24px",
+          "border": "1px solid #2d3748"
+        },
+        "meetingItem": {
+          "backgroundColor": "#242b3d",
+          "borderRadius": "8px",
+          "padding": "16px",
+          "marginBottom": "12px",
+          "border": "1px solid #2d3748"
+        },
+        "meetingTime": {
+          "color": "#a0aec0",
+          "fontSize": "12px",
+          "marginBottom": "8px"
+        },
+        "meetingTitle": {
+          "color": "#ffffff",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "marginBottom": "4px"
+        },
+        "meetingDescription": {
+          "color": "#718096",
+          "fontSize": "12px"
+        },
+        "scheduleMeetingButton": {
+          "backgroundColor": "#3182ce",
+          "color": "#ffffff",
+          "borderRadius": "8px",
+          "padding": "12px 16px",
+          "border": "none",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "cursor": "pointer",
+          "hover": {
+            "backgroundColor": "#2c5aa0"
+          }
+        }
+      },
+
+      "activityWidget": {
+        "container": {
+          "backgroundColor": "#1a1f2e",
+          "borderRadius": "12px",
+          "padding": "24px",
+          "border": "1px solid #2d3748"
+        },
+        "header": {
+          "display": "flex",
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "marginBottom": "16px"
+        },
+        "title": {
+          "color": "#ffffff",
+          "fontSize": "16px",
+          "fontWeight": "600"
+        },
+        "percentage": {
+          "color": "#38a169",
+          "fontSize": "12px",
+          "fontWeight": "500"
+        },
+        "mainMetric": {
+          "color": "#ffffff",
+          "fontSize": "36px",
+          "fontWeight": "700",
+          "textAlign": "center",
+          "marginBottom": "20px"
+        },
+        "weeklyStats": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(5, 1fr)",
+          "gap": "8px",
+          "marginBottom": "24px"
+        },
+        "dayColumn": {
+          "textAlign": "center"
+        },
+        "dayLabel": {
+          "color": "#718096",
+          "fontSize": "10px",
+          "marginBottom": "4px"
+        },
+        "dayPercentage": {
+          "color": "#a0aec0",
+          "fontSize": "12px",
+          "fontWeight": "600"
+        }
+      },
+
+      "projectsWidget": {
+        "container": {
+          "backgroundColor": "#1a1f2e",
+          "borderRadius": "12px",
+          "padding": "24px",
+          "border": "1px solid #2d3748"
+        },
+        "donutChart": {
+          "width": "120px",
+          "height": "120px",
+          "margin": "0 auto 16px"
+        },
+        "centerNumber": {
+          "color": "#ffffff",
+          "fontSize": "32px",
+          "fontWeight": "700",
+          "textAlign": "center"
+        },
+        "centerLabel": {
+          "color": "#718096",
+          "fontSize": "12px",
+          "textAlign": "center"
+        },
+        "projectList": {
+          "marginTop": "20px"
+        },
+        "projectItem": {
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "space-between",
+          "marginBottom": "12px"
+        },
+        "projectName": {
+          "color": "#a0aec0",
+          "fontSize": "14px"
+        },
+        "projectPercentage": {
+          "color": "#ffffff",
+          "fontSize": "14px",
+          "fontWeight": "600"
+        }
+      },
+
+      "projectCalendar": {
+        "container": {
+          "backgroundColor": "#1a1f2e",
+          "borderRadius": "12px",
+          "padding": "24px",
+          "border": "1px solid #2d3748"
+        },
+        "header": {
+          "display": "flex",
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "marginBottom": "24px"
+        },
+        "title": {
+          "color": "#ffffff",
+          "fontSize": "18px",
+          "fontWeight": "600"
+        },
+        "filterButton": {
+          "backgroundColor": "#2d3748",
+          "color": "#a0aec0",
+          "border": "1px solid #4a5568",
+          "borderRadius": "6px",
+          "padding": "8px 12px",
+          "fontSize": "12px",
+          "cursor": "pointer"
+        },
+        "calendarGrid": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(5, 1fr)",
+          "gap": "16px"
+        },
+        "dayColumn": {
+          "minHeight": "300px"
+        },
+        "dayHeader": {
+          "color": "#718096",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "marginBottom": "12px"
+        },
+        "taskCard": {
+          "borderRadius": "8px",
+          "padding": "12px",
+          "marginBottom": "8px",
+          "border": "1px solid transparent"
+        },
+        "taskCard_high": {
+          "backgroundColor": "#742a2a",
+          "borderColor": "#e53e3e"
+        },
+        "taskCard_medium": {
+          "backgroundColor": "#744210",
+          "borderColor": "#d69e2e"
+        },
+        "taskCard_low": {
+          "backgroundColor": "#22543d",
+          "borderColor": "#38a169"
+        },
+        "taskTitle": {
+          "color": "#ffffff",
+          "fontSize": "13px",
+          "fontWeight": "600",
+          "marginBottom": "4px"
+        },
+        "taskDescription": {
+          "color": "#a0aec0",
+          "fontSize": "11px",
+          "marginBottom": "8px"
+        },
+        "taskMeta": {
+          "display": "flex",
+          "alignItems": "center",
+          "gap": "8px"
+        },
+        "taskTime": {
+          "color": "#718096",
+          "fontSize": "10px"
+        },
+        "taskComments": {
+          "color": "#718096",
+          "fontSize": "10px"
+        }
+      },
+
+      "remindersWidget": {
+        "container": {
+          "backgroundColor": "#1a1f2e",
+          "borderRadius": "12px",
+          "padding": "24px",
+          "border": "1px solid #2d3748"
+        },
+        "reminderItem": {
+          "backgroundColor": "#242b3d",
+          "borderRadius": "8px",
+          "padding": "16px",
+          "marginBottom": "12px",
+          "border": "1px solid #2d3748"
+        },
+        "reminderTime": {
+          "color": "#ffffff",
+          "fontSize": "18px",
+          "fontWeight": "700",
+          "marginBottom": "4px"
+        },
+        "reminderTitle": {
+          "color": "#a0aec0",
+          "fontSize": "14px",
+          "marginBottom": "2px"
+        },
+        "reminderDescription": {
+          "color": "#718096",
+          "fontSize": "12px"
+        },
+        "priorityIndicator": {
+          "width": "8px",
+          "height": "8px",
+          "borderRadius": "50%",
+          "marginRight": "12px"
+        },
+        "priorityIndicator_high": {
+          "backgroundColor": "#e53e3e"
+        },
+        "priorityIndicator_low": {
+          "backgroundColor": "#38a169"
+        },
+        "addReminderButton": {
+          "backgroundColor": "#2d3748",
+          "color": "#4299e1",
+          "border": "1px solid #4a5568",
+          "borderRadius": "8px",
+          "padding": "12px",
+          "width": "100%",
+          "fontSize": "14px",
+          "cursor": "pointer",
+          "hover": {
+            "backgroundColor": "#4a5568"
+          }
+        }
+      }
+    },
+
+    "typography": {
+      "fontFamily": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+      "scales": {
+        "heading1": {
+          "fontSize": "28px",
+          "fontWeight": "600",
+          "lineHeight": "1.2",
+          "color": "#ffffff"
+        },
+        "heading2": {
+          "fontSize": "18px",
+          "fontWeight": "600",
+          "lineHeight": "1.3",
+          "color": "#ffffff"
+        },
+        "heading3": {
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "lineHeight": "1.4",
+          "color": "#ffffff"
+        },
+        "body": {
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "1.5",
+          "color": "#a0aec0"
+        },
+        "bodySmall": {
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "1.4",
+          "color": "#718096"
+        },
+        "caption": {
+          "fontSize": "10px",
+          "fontWeight": "500",
+          "lineHeight": "1.3",
+          "color": "#718096"
+        }
+      }
+    },
+
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "20px",
+      "xxl": "24px",
+      "xxxl": "32px"
+    },
+
+    "borderRadius": {
+      "small": "4px",
+      "medium": "8px",
+      "large": "12px",
+      "circle": "50%"
+    },
+
+    "shadows": {
+      "small": "0 2px 4px rgba(0, 0, 0, 0.1)",
+      "medium": "0 4px 6px rgba(0, 0, 0, 0.1)",
+      "large": "0 8px 15px rgba(0, 0, 0, 0.2)",
+      "glow": "0 8px 20px rgba(237, 137, 54, 0.3)"
+    },
+
+    "transitions": {
+      "fast": "0.15s ease",
+      "medium": "0.2s ease",
+      "slow": "0.3s ease"
+    },
+
+    "breakpoints": {
+      "mobile": "320px",
+      "tablet": "768px",
+      "desktop": "1024px",
+      "wide": "1280px"
+    }
+  }
+}
